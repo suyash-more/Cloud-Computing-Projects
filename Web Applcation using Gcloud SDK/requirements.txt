@@ -1,0 +1,2 @@
+requests==2.7.0
+webapp2==2.5.2

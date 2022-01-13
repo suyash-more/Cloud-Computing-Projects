@@ -1,0 +1,65 @@
+<html>
+    <style>
+        .weatherText {
+            font-family: "Lato", "sans-serif";
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #weatherForm {
+            padding: 20px;
+        }
+
+        #weatherSubmit {
+            color: white;
+            background-color: #083375;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #weatherSubmit:hover {
+            cursor: pointer;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            border: 2px solid black;
+            width: 50%;
+
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <head>
+        <title class="alignct">Weather Dashboard</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="card">
+            <h2 class="weatherText">Weather Dashboard in Flask</h2>
+
+            <form class="weatherText" id="weatherForm" action="/" method="post">
+                Location Zip Code:
+                <input
+                    class="weatherText"
+                    id="weatherInput"
+                    type="text"
+                    name="zipCode"
+                /><br />
+                <input
+                    class="weatherText"
+                    id="weatherSubmit"
+                    type="submit"
+                    value="Submit"
+                />
+            </form>
+        </div>
+    </body>
+</html>
