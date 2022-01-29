@@ -7,6 +7,9 @@ run, and manage applications without the complexity of building
 and maintaining the infrastructure typically associated with 
 developing and launching an app.
 
+
+![](paasimg.png)
+
 ### What AWS Amplify is?
 AWS Amplify is a set of purpose-built tools and features that lets 
 frontend web and mobile developers quickly and easily build 
@@ -16,11 +19,6 @@ With Amplify, you can configure a web or mobile app backend,
 connect your app in minutes, visually build a web frontend UI, 
 and easily manage app content outside the AWS console. Ship 
 faster and scale effortlessly—with no cloud expertise needed.
-
-
-
-![](paasimg.png)
-
 
 ### Steps :
 1. Login to the AWS console
