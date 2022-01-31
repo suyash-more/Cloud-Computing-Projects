@@ -19,7 +19,6 @@ Open environment variables window, add the following to the path variable
 Do include your bin path wherever you have installed JDK
 Mine is as  following :
 > C:\Program Files\Java\jdk-14.0.1\bin
-
 ```
 4. Open eclipse in your confined workspace 
 5. Click on new and open a new **JAVA Project**, give it a name
