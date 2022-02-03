@@ -42,6 +42,9 @@
         />
     </head>
     <body>
+        <h1 id="error_head" style="display: none" value="{{error}}">
+            {{error}}
+        </h1>
         <div class="card">
             <h2 class="weatherText">Post Office Finder Using WebApp</h2>
 
@@ -61,5 +64,14 @@
                 />
             </form>
         </div>
+        <script>
+            let err = document.getElementById("error_head");
+            function myFunction() {
+                alert("Enter Valid Pin Code");
+            }
+            if (err) {
+                myFunction();
+            }
+        </script>
     </body>
 </html>
