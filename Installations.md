@@ -34,11 +34,10 @@ sudo apt update
 #### Assign 5 - npm, nvm, angular to be installed (net required to install npm packages)
 ```sh
 sudo apt update && sudo apt upgrade
-sudo apt install curl -y 
 cd ~
-curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh
-bash install_nvm.sh
-source ~/.bash_profile
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.nvm/nvm.sh 
+nvm --version
 ```
 Restart the terminal 
 ```sh
@@ -54,11 +53,10 @@ If node is already installed nothing to be installed here
 else: 
 ```sh
 sudo apt update && sudo apt upgrade
-sudo apt install curl -y 
 cd ~
-curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh
-bash install_nvm.sh
-source ~/.bash_profile
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.nvm/nvm.sh 
+nvm --version
 ```
 Restart the terminal 
 ```sh
