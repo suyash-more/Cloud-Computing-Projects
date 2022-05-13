@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-item: center;
-        }
-        #weatherResults {
-            background-color: #83e9c2;
-            font-family: "Lato", sans-serif;
-            font-size: 24px;
-            padding: 30px;
-            display: inline-block;
-            text-align: center;
-            margin: 20px;
-            margin-top: 10%;
-            border: 2px solid black;
-            border-radius: 5px;
-        }
-    </style>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Post Office Information</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <div id="weatherResults">
-            <table>
-                <tr>
-                    <th>
-                        <h3>State of Post Office :</h3>
-                    </th>
-                    <th>
-                        <h3>{{ post_office }}</h3>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <h3>Name of Post Office :</h3>
-                    </th>
-                    <th>
-                        <h3>{{ name }}</h3>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <h3>Block of Post Office:</h3>
-                    </th>
-                    <th>
-                        <h3>{{ block }}</h3>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <h3>District of Post Office:</h3>
-                    </th>
-                    <th>
-                        <h3>{{ district }}</h3>
-                    </th>
-                </tr>
-            </table>
-        </div>
-    </body>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #weatherResults {
+      background-color: #83e9c2;
+      font-family: 'Lato', sans-serif;
+      font-size: 24px;
+      padding: 30px;
+      display: inline-block;
+      text-align: center;
+      margin: 20px;
+      margin-top: 10%;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Post Office Information</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="weatherResults">
+      <table>
+        <tr>
+          <th>
+            <h3>State of Post Office :</h3>
+          </th>
+          <th>
+            <h3>{{ post_office }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Name of Post Office :</h3>
+          </th>
+          <th>
+            <h3>{{ name }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>Block of Post Office:</h3>
+          </th>
+          <th>
+            <h3>{{ block }}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3>District of Post Office:</h3>
+          </th>
+          <th>
+            <h3>{{ district }}</h3>
+          </th>
+        </tr>
+      </table>
+      <a href="http://localhost:8080/"><h4>Back to the Home page</h4></a>
+    </div>
+  </body>
 </html>

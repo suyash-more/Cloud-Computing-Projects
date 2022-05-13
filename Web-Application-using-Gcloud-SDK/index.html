@@ -1,77 +1,83 @@
 <html>
-    <style>
-        .weatherText {
-            font-family: "Lato", "sans-serif";
-            font-size: 24px;
-            text-align: center;
-        }
+  <style>
+    .weatherText {
+      font-family: 'Lato', 'sans-serif';
+      font-size: 24px;
+      text-align: center;
+    }
 
-        #weatherForm {
-            padding: 20px;
-        }
+    #weatherForm {
+      padding: 20px;
+    }
 
-        #weatherSubmit {
-            color: white;
-            background-color: #083375;
-            padding: 5px 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
+    #weatherSubmit {
+      color: white;
+      background-color: #083375;
+      padding: 5px 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
 
-        #weatherSubmit:hover {
-            cursor: pointer;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .card {
-            border: 2px solid black;
-            width: 50%;
+    #weatherSubmit:hover {
+      cursor: pointer;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      border: 2px solid black;
+      width: 50%;
 
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-    <head>
-        <title class="alignct">Post Office Finder</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-            rel="stylesheet"
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <head>
+    <title class="alignct">Post Office Finder</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h2 class="weatherText">Post Office Finder Using WebApp</h2>
+      <h1 id="error_head" style="display: none" value="{{error}}">{{error}}</h1>
+
+      <form class="weatherText" id="weatherForm" action="/" method="post">
+        Location Zip Code:
+        <input
+          class="weatherText"
+          id="weatherInput"
+          type="text"
+          name="zipCode"
+        /><br />
+        <input
+          class="weatherText"
+          id="weatherSubmit"
+          type="submit"
+          value="Submit"
         />
-    </head>
-    <body>
-        <h1 id="error_head" style="display: none" value="{{error}}">
-            {{error}}
-        </h1>
-        <div class="card">
-            <h2 class="weatherText">Post Office Finder Using WebApp</h2>
-
-            <form class="weatherText" id="weatherForm" action="/" method="post">
-                Location Zip Code:
-                <input
-                    class="weatherText"
-                    id="weatherInput"
-                    type="text"
-                    name="zipCode"
-                /><br />
-                <input
-                    class="weatherText"
-                    id="weatherSubmit"
-                    type="submit"
-                    value="Submit"
-                />
-            </form>
-        </div>
-        <script>
-            let err = document.getElementById("error_head");
-            function myFunction() {
-                alert("Enter Valid Pin Code");
-            }
-            if (err) {
-                myFunction();
-            }
-        </script>
-    </body>
+        <button
+          id="weatherSubmit"
+          class="weatherText"
+          onclick="document.getElementById(
+         'weatherInput').value = ''"
+        >
+          Clear
+        </button>
+      </form>
+    </div>
+    <!-- <script>
+      let err = document.getElementById('error_head');
+      function myFunction() {
+        alert('Please Enter the Valid Pin Code!');
+      }
+      if (err) {
+        myFunction();
+      }
+    </script> -->
+  </body>
 </html>
